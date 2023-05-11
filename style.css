@@ -63,7 +63,7 @@ li {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(193deg) brightness(106%) contrast(106%);
   height: 25px;
   display: grid;
-  grid-template-rows: 1px 1px;
+  grid-template-rows: 1fr 1fr;
   margin-right: 10px;
   margin-top: 20px;
 }
@@ -102,7 +102,7 @@ li {
 }
 
 .logo-bottom-image{
-  height: 40px;
+  height: 50px;
 }
 
 .bell-image{
@@ -286,18 +286,40 @@ button{
   color: black;
   text-align: left;
   border-radius: 0.5rem;
-  padding: 9px;
+  padding: 17px;
   box-shadow: 0px 5px 10px rgb(183, 176, 176);
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(75px, 1fr));
+  gap: 9px;
   
 }
-.trending-card{
+.trending-card-nick{
   display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
-.trending-card .text{
+.trending-card-tegan{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+}
+
+.trending-card-kendall{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.trending-card-alex{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+
+.trending-card-info .text{
   font-weight: bold;
   color: rgb(87, 87, 87); 
   font-size: 12px;
+  
 }
 
 .author {
@@ -306,5 +328,7 @@ button{
 }
 
 .nick-logo{
-  height: 40px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
 }
