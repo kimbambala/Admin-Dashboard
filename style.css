@@ -219,6 +219,19 @@ button{
   color: black;
 }
 
+.card-images{
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.star-image, .eye-image, .source-image{
+  height: 20px;
+}
+
+
 .announce-trend{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -290,4 +303,8 @@ button{
 .author {
   text-align: left;
   color: black;
+}
+
+.nick-logo{
+  height: 40px;
 }
